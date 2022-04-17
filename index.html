@@ -1,0 +1,105 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+    <meta charset="utf-8" />
+    <title>HTML - CSS - Ma première page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/main.js"></script>
+	</head>
+	<body>
+    <!-- Menu de navigation du site -->
+    <div class="right left" id="menu">
+      <ul>
+        <li>Accueil</li>
+        <li>Introduction</li>
+        <li>Mes passions</li>
+        <li>Ma photo</li>
+        <li>Divers</li>
+        <button onclick="moove()">moove</button>
+      </ul>
+    </div>
+      
+      
+      
+    <!-- Contenu principal -->
+    <div class="contenu">
+        <h1>Ma première page</h1>
+
+        <h2>Introduction</h2>
+        
+        <p>Bienvenue sur ma page avec du style!</p>
+        
+        <p>Ceci est une page de test nous allons utiliser du "lorem ipsum" qui est du faut texte pour remplir la page.</p>       
+        
+
+        <h2>Mes passions</h2>
+        <h3>Faire des sites internet</h3>
+        
+        <p>Metus aliquam eleifend mi in. Felis, bibendum ut tristique et, egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim, sit amet venenatis urna cursus.</p>
+        
+        
+        <p>Mauris vitae ultricies leo integer malesuada nunc vel risus commodo viverra maecenas accumsan, lacus vel facilisis volutpat.<br>Quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis!</p>
+        
+        
+        <p>Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi leo urna, molestie at elementum eu, facilisis sed odio morbi quis commodo odio. Aliquam eleifend mi in nulla posuere sollicitudin!</p>
+        
+        <h3>Faire du ski</h3>
+        
+        <p>Pharetra vel turpis nunc eget lorem dolor, sed viverra ipsum nunc aliquet bibendum enim, facilisis gravida. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere morbi leo urna, molestie at?</p>
+        
+        
+        <p>Enim tortor, at auctor urna nunc id cursus metus aliquam eleifend mi in nulla posuere sollicitudin! Eros, in cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat!</p>
+        
+        
+        <p>Varius vel, pharetra vel turpis nunc. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas maecenas.</p>
+        
+        
+        <p>Odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel! Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc, consequat interdum varius sit amet, mattis vulputate enim nulla.</p>
+        
+        
+        <h2>Ma photo</h2>
+        
+        <p>Elementum eu, facilisis sed odio morbi quis commodo odio aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat! Ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu?</p>
+        
+        <img src="img/maphoto.jpg" class="image">
+        
+        <p>Quis enim lobortis scelerisque fermentum dui faucibus in. Purus gravida quis blandit turpis cursus in hac habitasse platea dictumst quisque sagittis, purus sit amet volutpat consequat, mauris nunc congue nisi.</p>
+        
+        
+        <h2>Divers</h2>
+        
+        <p>Nunc, consequat interdum varius sit amet, mattis vulputate enim nulla aliquet porttitor lacus, luctus accumsan tortor posuere ac! Eget aliquet nibh praesent tristique magna sit amet purus gravida quis blandit?</p>
+        
+        <h2>Contact</h2>
+          <form>
+            <fieldset>
+              <legend>Vos coordonnées</legend> <!-- Titre du fieldset -->
+              <p>
+              <label for="nom">Votre nom</label> : <input type="text" name="nom" id="nom"/><br>
+              <label for="prenom">Votre prenom</label> : <input type="text" name="prenom" id="prenom"/><br>
+              <label for="email">Votre email</label> : <input type="email" name="email" id="email" placeholder="Ex : durant@gmail.com" size="30" maxlength="50"/><br>
+              <label for="telephone">n° de telephone</label> : <input type="text" name="telephone" id="telephone"/><br>
+              </p>
+            </fieldset><br>
+              
+            <fieldset>
+              <legend>Message</legend>
+              <label for="ameliorer">Comment pensez-vous que je puisse améliorer mon site ?</label><br>
+              <textarea name="ameliorer" id="message" rows="10" cols="50"></textarea><br>
+              </fieldset><br>
+
+              <fieldset>
+              <legend>Infos</legend>
+              <label for="date">Date de naissance</label> : <input type="date" name="date" id="date"/><br>
+              <label for="sexe">Votre sexe</label>
+              <select name="sexe" id="sexe">
+                <option value="Femme">Femme</option>
+                <option value="Homme">Homme</option><br>
+                <input type="submit" onclick="getValue();" value="Envoyer">
+              </p>
+            </fieldset>
+          </form>
+      </div>
+	</body>
+</html>
